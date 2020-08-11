@@ -1,3 +1,21 @@
+/*Сброс браузерных отступов и настроек шрифта для текстовых элементов*/
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/*Микс: светлый фон для блока*/
+.theme-light {
+  background-color: #f2f2f2;
+}
+
+/*Микс: тёмный фон для блока*/
+.theme-dark {
+  background-color: #1f1f1f;
+}
+
+/*Блок: страница*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,7 +27,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*Шапка сайта*/
+/*Блок: Шапка сайта*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -21,18 +39,22 @@
   position: relative;
 }
 
+/*Элемент: заголовок шапки*/
 .header__title {
+  display: block;
   width: 730px;
-  height: 96px;
+  min-height: 96px;
   font-size: 102px;
   font-weight: bold;
   margin-left: 64px;
   z-index: 1;
 }
 
+/*Элемент: подзаголовок шапки*/
 .header__subtitle {
+  display: block;
   width: 388px;
-  height: 25px;
+  min-height: 25px;
   font-size: 18px;
   position: absolute;
   left: 64px;
@@ -40,11 +62,13 @@
   z-index: 1;
 }
 
+/*Элемент: ссылка шапки*/
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
+/*Элемент: картинка шапки*/
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -54,6 +78,7 @@
   bottom: 0;
 }
 
+/*Элемент: синий квадрат шапки*/
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -63,12 +88,13 @@
   top: 64px;
 }
 
-/*Лого*/
+/*Блок: Лого*/
 .logo {
   background-size: cover;
   background-position: center;
 }
 
+/*Модификатор: расположение в шапке*/
 .logo_place_header {
   width: 183px;
   height: 32px;
@@ -79,6 +105,7 @@
   z-index: 2;
 }
 
+/*Модификатор: расположение в подвале*/
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
