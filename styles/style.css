@@ -41,11 +41,8 @@
 }
 
 .header__link {
-  height: 25px;
-  font-size: 18px;
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
