@@ -5,14 +5,16 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: normal;
 }
 
-/*Микс: светлый фон для блока*/
-.theme-light {
-  background-color: #f2f2f2;
+/*Внешний отступ снизу в 100px*/
+.block-margin-l
+{
+  margin-bottom: 100px;
 }
 
-/*Микс: тёмный фон для блока*/
-.theme-dark {
-  background-color: #1f1f1f;
+/*Внешний отступ снизу в 90px*/
+.block-margin-m
+{
+  margin-bottom: 90px;
 }
 
 /*Блок: страница*/
@@ -25,6 +27,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  background-color: #f2f2f2;
 }
 
 /*Блок: Шапка сайта*/
