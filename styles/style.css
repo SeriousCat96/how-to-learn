@@ -45,9 +45,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /*Элемент: заголовок шапки*/
 .header__title {
-  display: block;
   width: 730px;
-  min-height: 96px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: bold;
   margin-left: 64px;
@@ -56,9 +55,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /*Элемент: подзаголовок шапки*/
 .header__subtitle {
-  display: block;
   width: 388px;
-  min-height: 25px;
+  line-height: 25px;
   font-size: 18px;
   position: absolute;
   left: 64px;
@@ -112,6 +110,48 @@ h1, h2, h3, h4, h5, h6, p, a {
 /*Модификатор: расположение в подвале*/
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
+}
+
+/*Блок с описанием*/
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+/*Блок: "2 колонки"*/
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
 }
 
 /* и элемента с модификатором вида ключ-значение */
