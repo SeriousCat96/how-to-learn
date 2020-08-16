@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: normal;
 }
 
+/*Миксы для описания внешней геометрии блоков*/
 /*Внешний отступ снизу в 100px*/
 .block-margin-l
 {
@@ -15,6 +16,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 .block-margin-m
 {
   margin-bottom: 90px;
+}
+
+/*Внешний отступ снизу в 20px*/
+.block-margin-s
+{
+  margin-bottom: 20px;
 }
 
 /*Блок: страница*/
@@ -43,7 +50,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   position: relative;
 }
 
-/*Элемент: заголовок шапки*/
 .header__title {
   width: 730px;
   line-height: 96px;
@@ -53,7 +59,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   z-index: 1;
 }
 
-/*Элемент: подзаголовок шапки*/
 .header__subtitle {
   width: 388px;
   line-height: 25px;
@@ -64,13 +69,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   z-index: 1;
 }
 
-/*Элемент: ссылка шапки*/
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-/*Элемент: картинка шапки*/
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -80,7 +83,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   bottom: 0;
 }
 
-/*Элемент: синий квадрат шапки*/
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -96,7 +98,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-position: center;
 }
 
-/*Модификатор: расположение в шапке*/
 .logo_place_header {
   width: 183px;
   height: 32px;
@@ -107,7 +108,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   z-index: 2;
 }
 
-/*Модификатор: расположение в подвале*/
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
@@ -118,7 +118,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
 }
 
-/*Блок: "2 колонки"*/
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -154,10 +153,60 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: bold;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/*Блок Digits*/
+.digits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.table__text_shifted {
+  margin-top: 20px;
 }
