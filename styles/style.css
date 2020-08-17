@@ -103,6 +103,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .logo_place_footer {
+  width: 183px;
+  height: 35px;
   background-image: url(../images/logo_place_footer.svg);
 }
 
@@ -262,6 +264,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .feynman__link {
   position: absolute;
+  color: black;
+  text-decoration: none;
   top: 50%;
   right: 48px;
   line-height: 51px;
@@ -287,4 +291,79 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 877px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*Блок: Подвал сайта*/
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 40px 0;
+  background-color: #1f1f1f;
+  color: white;
+  min-height: 350px;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__column_content_info {
+  flex-direction: column;
+}
+
+.footer__column_content_social {
+  flex-direction: column;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  margin: 20px 0 16px 0;
+}
+
+.footer__column-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__column-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-right: 10px;
 }
