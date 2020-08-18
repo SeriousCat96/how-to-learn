@@ -1,29 +1,3 @@
-/*Сброс браузерных отступов и настроек шрифта для текстовых элементов*/
-h1, h2, h3, h4, h5, h6, p, a {
-  margin: 0;
-  font-size: 100%;
-  font-weight: normal;
-}
-
-/*Миксы для описания внешней геометрии блоков*/
-/*Внешний отступ снизу в 100px*/
-.block-margin-l
-{
-  margin-bottom: 100px;
-}
-
-/*Внешний отступ снизу в 90px*/
-.block-margin-m
-{
-  margin-bottom: 90px;
-}
-
-/*Внешний отступ снизу в 20px*/
-.block-margin-s
-{
-  margin-bottom: 20px;
-}
-
 /*Блок: страница*/
 .page {
   min-width: 1100px;
@@ -33,6 +7,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /*Блок: Шапка сайта*/
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -42,18 +17,22 @@ h1, h2, h3, h4, h5, h6, p, a {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .header__title {
+  margin: 0;
+  font-weight: bold;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
-  font-weight: bold;
   margin-left: 64px;
   z-index: 1;
 }
 
 .header__subtitle {
+  margin: 0;
+  font-weight: normal;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -64,8 +43,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .header__link {
+  margin: 0;
+  font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: red;
 }
 
 .header__main-illustration {
@@ -116,6 +101,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .description {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .two-columns {
@@ -125,6 +111,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .two-columns__brief {
+  margin: 0;
+  font-weight: normal;
   width: 175px;
   color: #2f80ed;
   font-size: 18px;
@@ -140,12 +128,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .two-columns__paragraph {
+  margin: 0;
+  font-weight: normal;
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 30px;
 }
 
-.two-columns__paragraph:last-of-type {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -161,29 +151,32 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .section-title {
+  margin: 0;
+  font-weight: bold;
   width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: bold;
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
-  line-height: 69px;
   color: white;
-  background-color: #1f1f1f;
 }
 
 .section-subtitle {
+  margin: 0;
+  font-weight: normal;
   width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  background-color: #1f1f1f;
 }
 
 .table {
@@ -191,16 +184,16 @@ h1, h2, h3, h4, h5, h6, p, a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  z-index: 1;
 }
 
 .table_theme_dark {
-  background-color: #1f1f1f;
+  color: white;
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
-  z-index: 1;
 }
 
 .table__cell_theme_dark {
@@ -210,10 +203,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .table__heading {
+  margin: 0;
+  font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bold;
 }
 
 .table__heading_theme_dark {
@@ -221,16 +215,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .table__text {
+  margin: 0;
+  font-weight: normal;
   line-height: 1.2;
   font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.table__cell .table__text:last-child {
+  margin-bottom: 0;
 }
 
 .table__text_theme_dark {
   color: white;
-}
-
-.table__text_shifted {
-  margin-top: 20px;
 }
 
 /*Блок Feynman*/
@@ -245,24 +242,30 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-size: 867px 637px;
   background-repeat: no-repeat;
   background-position: left bottom;
+  padding-top: 100px;
 }
 
 .feynman__title {
+  margin: 0;
+  font-weight: bold;
   width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: bold;
   margin-bottom: 70px;
 }
 
 .feynman__subtitle {
+  margin: 0;
+  font-weight: normal;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
 }
 
 .feynman__link {
+  margin: 0;
+  font-weight: normal;
   position: absolute;
   color: black;
   text-decoration: none;
@@ -270,6 +273,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+}
+
+.feynman__link:hover {
+  color: red;
 }
 
 /*Блок Kaufman*/
@@ -289,6 +296,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   right: -210px;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -297,10 +305,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 60px 0 40px 0;
+  min-height: 350px;
   background-color: #1f1f1f;
   color: white;
-  min-height: 350px;
+  box-sizing: border-box;
+  padding: 60px 0 40px 0;
 }
 
 .footer__columns {
@@ -328,34 +337,38 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .footer__author {
+  font-weight: normal;
   line-height: 25px;
   font-size: 18px;
   margin: 18px 0;
 }
 
 .footer__column-heading {
+  margin: 0;
+  font-weight: bold;
   line-height: 30px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .footer__column-links {
+  list-style: none;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   margin: 20px 0 16px 0;
 }
 
-.footer__column-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .footer__column-link {
+  margin: 0;
+  font-weight: normal;
   display: flex;
   align-items: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+.footer__column-link:hover {
+  color: red;
 }
 
 .footer__social-icon {
