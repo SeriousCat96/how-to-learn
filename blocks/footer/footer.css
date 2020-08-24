@@ -1,0 +1,10 @@
+/*Блок: Подвал сайта*/
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  box-sizing: border-box;
+  padding: 60px 0 40px 0;
+}

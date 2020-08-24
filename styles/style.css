@@ -1,25 +1,3 @@
-/*Блок: страница*/
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-/*Блок: Шапка сайта*/
-
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 100px;
-}
-
 .header__title {
   margin: 0;
   font-weight: bold;
@@ -71,12 +49,6 @@
   top: 64px;
 }
 
-/*Блок: Лого*/
-.logo {
-  background-size: cover;
-  background-position: center;
-}
-
 .logo_place_header {
   width: 183px;
   height: 32px;
@@ -91,23 +63,6 @@
   width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
-}
-
-/*Блок: Контент*/
-.content {
-}
-
-/*Блок с описанием*/
-.description {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
 }
 
 .two-columns__brief {
@@ -143,48 +98,12 @@
   font-weight: bold;
 }
 
-/*Блок Digits*/
-.digits {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.section-title {
-  margin: 0;
-  font-weight: bold;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  margin-bottom: 20px;
-  z-index: 1;
-}
-
 .section-title_theme_dark {
   color: white;
 }
 
-.section-subtitle {
-  margin: 0;
-  font-weight: normal;
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  z-index: 1;
-}
-
 .section-subtitle_theme_dark {
   color: white;
-}
-
-.table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
-  z-index: 1;
 }
 
 .table_theme_dark {
@@ -230,21 +149,6 @@
   color: white;
 }
 
-/*Блок Feynman*/
-.feynman {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 790px;
-  background-color: #f2f2f2;
-  background-image: url(../images/feynman.png);
-  background-size: 867px 637px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  padding-top: 100px;
-}
-
 .feynman__title {
   margin: 0;
   font-weight: bold;
@@ -279,17 +183,6 @@
   color: red;
 }
 
-/*Блок Kaufman*/
-.kaufman {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 90px 0;
-  background-color: #1f1f1f;
-}
-
 .kaufman__triangle {
   position: absolute;
   top: 0;
@@ -299,17 +192,6 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/*Блок: Подвал сайта*/
-.footer {
-  display: flex;
-  justify-content: center;
-  min-height: 350px;
-  background-color: #1f1f1f;
-  color: white;
-  box-sizing: border-box;
-  padding: 60px 0 40px 0;
 }
 
 .footer__columns {
