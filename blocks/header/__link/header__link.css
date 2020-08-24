@@ -1,0 +1,10 @@
+.header__link {
+  margin: 0;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: red;
+}
