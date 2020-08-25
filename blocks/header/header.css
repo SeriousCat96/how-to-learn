@@ -9,4 +9,5 @@
   justify-content: center;
   position: relative;
   margin-bottom: 100px;
+  overflow: hidden;
 }
