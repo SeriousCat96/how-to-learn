@@ -5,8 +5,9 @@
   align-items: center;
   color: #ffffff;
   text-decoration: none;
+  transition: opacity .6s ease;
 }
 
 .footer__column-link:hover {
-  color: red;
+  opacity: 0.6;
 }
