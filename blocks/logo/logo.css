@@ -1,5 +1,4 @@
 /*Блок: Лого*/
 .logo {
-  background-size: cover;
-  background-position: center;
+  background: center / cover;
 }

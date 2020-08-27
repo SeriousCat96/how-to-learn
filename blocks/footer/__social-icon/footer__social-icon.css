@@ -2,8 +2,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background-size: cover;
-  background-position: center;
+  background: center / cover;
   text-align: center;
   margin-right: 10px;
 }
