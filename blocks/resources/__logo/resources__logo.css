@@ -4,9 +4,10 @@
   width: 270px;
   height: 38px;
   background: center / cover;
-  transition: opacity .6s ease;
+  transition: opacity 1s ease-outs, transform 1s ease-in-out;
 }
 
 .resources__logo:hover {
+  transform: scale(1.2);
   opacity: 0.6;
 }
