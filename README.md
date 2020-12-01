@@ -8,3 +8,4 @@
 * iframe;
 * CSS (flexbox, keyframes, анимации, трансформации);
 * Структура проекта организована согласно [БЭМ](https://ru.bem.info/).
+* Сайт опубликован на [GitHub Pages](https://seriouscat96.github.io/how-to-learn/).
